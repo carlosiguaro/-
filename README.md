@@ -1,2 +1,1 @@
-# info
-My personal web page
+Mi web page
