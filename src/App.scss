@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+div#root{
+  // position: relative;
+}
+main, div#root{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+div#root{
+  position: absolute;
+  background-image: radial-gradient(circle, rgba(243,182,30,1) 0%, rgba(246,201,39,1) 50%, rgba(243,182,30,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  &::before{
+    content: '.';
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #FFFFFF;
+    z-index: 0;
+    border-radius: 0% 0% 40% 40%;    
+  }
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./static/elements.svg');
+  background-repeat: no-repeat;
+  
+  @media (max-width: 576px) {
+    background-position: 50% 75%;
+    background-size: 90%;
+  }
+
+  @media (min-width: 576px) and  (max-width: 768px) {
+    background-position: 50% 98%;
+    background-size: 90%;
+  }
+  @media (min-width: 768px) and  (max-width: 992px) {
+    background-position: 50% 90%;
+    background-size: 90%;
+  }
+
+  @media (min-width: 992px) and  (max-width: 1200px)  {
+    background-position: 50% 90%;
+    background-size: 60%;
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    background-position: 50% 90%;
+    background-size: 65%;
+  }
+  @media (min-width: 1400px) {
+    background-position: 50% 90%;
+    background-size: 60em;
+   }
+
+  // background-color: lime;
+  >header{
+    width: 100%;
+    height: 150px;
+    // background-color: lime;
+    display: flex;
+    justify-content: space-between;
+    >div{
+      &:first-child{
+        margin-left: 2em;
+        display: flex;
+        align-items: center;
+        //content svg 
+        >div:first-child{
+          margin-right: 1em;
+          >svg {
+            width: 25px;
+            height: 25px;
+            >path:first-child{
+              fill: #f6cc26;
+            }
+            >path:nth-child(2){
+              fill: #f1a435;
+            }
+          }
+        }
+        // title content
+        >div:last-child{
+          display: flex;
+          flex-direction: column;
+          >label{
+            @media (max-width: 710px) { font-size: 1em; }
+            @media (min-width: 710px) { font-size: 1.2em;}
+          }
+        }
+      }
+      &:last-child{
+        margin-right: 2em;
+        display: flex;
+        align-content: center;
+        >div{
+          display: flex;
+          align-items: center;
+          >select{
+            // background-image: radial-gradient(circle, rgba(243,182,30,1) 0%, rgba(246,201,39,1) 50%, rgba(243,182,30,1) 100%);
+            padding: .5em 1em;
+            border-radius: .2em;
+            color: orange;
+            border: orange 1px solid;
+            font-weight: bold;
+            outline: 0;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  >section{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    >div {
+      >label{
+        position: relative;
+        top: 9em;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: radial-gradient(circle, rgba(243,182,30,1) 0%, rgba(246,201,39,1) 50%, rgba(243,182,30,1) 100%);
+        color: #FFFFFF;
+        border-radius: .5em;
+        padding: 1em;
+        
+        @media (min-width: 710px) { font-size: 1.2em;}
+        @media (max-width: 710px) { font-size: .95em; }
+      
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
