@@ -47,7 +47,7 @@ main {
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
-	background-image: url(./media/elements.5b192d52.svg);
+	background-image: url(/build/static/media/elements.5b192d52.svg);
 	background-repeat: no-repeat
 }
 
